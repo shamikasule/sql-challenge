@@ -28,6 +28,13 @@ on employees.emp_no = dept_manager.emp_no
 order by dept_no asc;
 
 --Question 4--
+select employees.emp_no, employees.last_name, employees.first_name, departments.dept_name
+from departments
+inner join dept_emp
+on departments.dept_no = dept_emp.dept_no
+inner join employees
+on employees.emp_no = dept_emp.emp_no
+order by emp_no asc;
 
 --Question 5--
 select first_name, last_name, sex
