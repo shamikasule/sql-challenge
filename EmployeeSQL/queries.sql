@@ -41,19 +41,25 @@ select first_name, last_name, sex
 from employees
 where first_name like 'Hercules' and last_name like 'B%';
 
---Question 6--(need to get department name!)
-select emp_no, last_name, first_name
-from employees
-where emp_no in (
-	select emp_no
-	from dept_emp
-	where dept_no in (
-		select dept_no
-		from departments
-		where dept_name='Sales'
-		));
+--Question 6--
+select employees.emp_no, employees.last_name, employees.first_name, departments.dept_name
+from departments
+inner join dept_emp
+on departments.dept_no = dept_emp.dept_no
+inner join employees
+on employees.emp_no = dept_emp.emp_no
+where departments.dept_name='Sales'
+order by emp_no asc;
 
 --Question 7--
+select employees.emp_no, employees.last_name, employees.first_name, departments.dept_name
+from departments
+inner join dept_emp
+on departments.dept_no = dept_emp.dept_no
+inner join employees
+on employees.emp_no = dept_emp.emp_no
+where departments.dept_name in('Sales', 'Development')
+order by emp_no asc;
 
 --Question 8--
 select last_name, count(*)
