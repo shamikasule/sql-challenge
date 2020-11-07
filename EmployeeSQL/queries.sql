@@ -11,12 +11,14 @@ select * from dept_manager;
 select employees.emp_no, last_name, first_name, sex, salary
 from employees
 left join salaries
-on employees.emp_no = salaries.emp_no;
+on employees.emp_no = salaries.emp_no
+order by emp_no asc;
 
 --Question 2--
 select first_name, last_name, hire_date
 from employees
-where hire_date >= '1986-01-01' and hire_date <= '1986-12-31';
+where hire_date >= '1986-01-01' and hire_date <= '1986-12-31'
+order by hire_date asc;
 
 --Question 3--
 select departments.dept_no, departments.dept_name, employees.emp_no, employees.last_name, employees.first_name
@@ -62,7 +64,21 @@ where departments.dept_name in('Sales', 'Development')
 order by emp_no asc;
 
 --Question 8--
-select last_name, count(*)
+select last_name, count(last_name)
 from employees
 group by last_name
-order by count(*) desc;
+order by count(last_name) desc;
+
+--BONUS--
+create view salary_title as (
+select employees.emp_title_id, employees.emp_no, titles.title, salaries.salary
+from employees
+inner join titles
+on employees.emp_title_id = titles.title_id
+inner join salaries
+on employees.emp_no = salaries.emp_no);
+
+select title, round(avg(salary),2) as "avg_salary"
+from salary_title
+group by title
+order by "avg_salary";
