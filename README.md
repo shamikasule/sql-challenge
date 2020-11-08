@@ -1,5 +1,5 @@
-# SQL-challenge-challenge
-> This challenge involves data engineering & analysis of employee records.
+# SQL-challenge
+> This challenge involves data engineering & analysis of employee records of an organization.
 
 ## Table of contents
 * [General info](#general-info)
