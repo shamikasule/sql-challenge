@@ -5,7 +5,7 @@
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
-* [Code Examples](#codeexamples)
+* [Analysis](#analysis)
 
 ## General info
 This is a SQL data analysis project of a company's employee/departments data.
