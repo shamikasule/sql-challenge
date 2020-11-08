@@ -8,7 +8,7 @@
 * [Analysis](#analysis)
 
 ## General info
-This is a SQL data analysis project of a company's employee/departments data.
+This is a SQL data analysis project of an organization's employee/departments data.
 The goal is to review the six .csv files, sketch ERD of tables - define datatypes, primary keys, foreign keys, get the data in SQL tables & analyze it to inspect the information asked.
 
 ## Technologies
