@@ -23,19 +23,19 @@ To run this project, install or check installation of :
 
 ## Code Examples
 
-#Data Engineering:
+# Data Engineering:
 
 * sketched the ERD using quickdatabasediagrams.com
 * created a db named sql-hw in PostgreSQL & copied the QuickDBD-export.sql in database query tool & ran it to replicate tables & dependencies created using quickdatabasediagrams.com into SQL.
 * tables were created in correct order to handle foreign keys. Eg: titles table was created before employees table as employees table references titles table for title_id.
 
- Data Analysis:
- -ran the queries to analyze the employee information like name,salary, departments.
- -filtered data to get specific information eg: employees hired in a particular year, employees with specific names.
- -utilized SQLAlchemy to connect to postgres db & query salaries & titles table.
- -used pandas read_sql_query to connect to the db and run queries on salaries & titles tables. 
- -utilizied pandas bins to get various salary categories & created a histogram to see these salary ranges to identify most common salary ranges for the employees.
- -ran a query in postgres to get the average salary per title & exported that as a .csv file.
- -plotted a bar chart of avg salary per title using pandas.
- -used a mix of pandas & sqlalchemy here to analyze this data problem.
-`
+# Data Analysis:
+
+* ran the queries to analyze the employee information like name,salary, departments.
+* filtered data to get specific information eg: employees hired in a particular year, employees with specific names.
+* utilized SQLAlchemy to connect to postgres db & query salaries & titles table.
+* used pandas read_sql_query to connect to the db and run queries on salaries & titles tables. 
+* utilizied pandas bins to get various salary categories & created a histogram to see these salary ranges to identify most common salary ranges for the employees.
+* ran a query in postgres to get the average salary per title & exported that as a .csv file.
+* plotted a bar chart of avg salary per title using pandas.
+* used a mix of pandas & sqlalchemy here to analyze this data problem.
