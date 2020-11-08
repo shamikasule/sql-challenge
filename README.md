@@ -8,8 +8,8 @@
 * [Code Examples](#codeexamples)
 
 ## General info
-This is a SQL data analysis project.
-There are six data files in .csv format. The goal is to sketch ERD of tables & analyze the organization's employees data.
+This is a SQL data analysis project of a company's employee/departments data.
+The goal is to review the six .csv files, sketch ERD of tables - define datatypes, primary keys, foreign keys, get the data in SQL tables & analyze it to inspect the information asked.
 
 ## Technologies
 Project is created with:
@@ -17,8 +17,8 @@ Project is created with:
 * jupyter notebook - version 6.0.3
 
 ## Setup
-To run this project, install or check for installation of :
-* postgresql1
+To run this project, install or check installation of :
+* PostgreSQL 11
 * SQLAlchemy
 
 ## Code Examples
