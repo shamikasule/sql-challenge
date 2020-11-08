@@ -21,7 +21,7 @@ To run this project, install or check installation of :
 * PostgreSQL 11
 * SQLAlchemy
 
-## Code Examples
+## Analysis
 
 ### Data Engineering:
 
